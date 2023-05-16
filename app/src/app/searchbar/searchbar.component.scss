@@ -1,0 +1,24 @@
+.searchbar {
+    position: relative;
+    width: 100%;
+
+    input {
+        width: 100%;
+        outline: 2px solid #243b5d;
+        border-radius: 50px;
+        height: 50px;
+        padding: 0 50px 0 20px;
+        font-size: 24px;
+    }
+
+    i {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        color: #243b5d;
+
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,35 @@
+<dialog [open]="isOpen">
+    <div class="dialog-wrapper">
+
+        <div class="image-container">
+            <ng-container *ngIf="image === ''">
+                <i class="material-symbols-outlined">hourglass_empty</i>
+
+                <h3>Processing...</h3>
+            </ng-container>
+
+            <img src="{{ image }}" alt="Image" *ngIf="image">
+        </div>
+
+
+        <div class="action-container">
+            <app-progressbar></app-progressbar>
+            
+            <button (click)="removeImage()">
+                <i class="material-symbols-outlined">delete</i>
+                <span>Remove</span>
+            </button>
+            
+            <button (click)="saveImage()">
+                <i class="material-symbols-outlined">star</i>
+                <span>Save</span>
+            </button>
+
+            <button class="close" (click)="closeDialog()">
+                <i class="material-symbols-outlined">close</i>
+                <span>Close</span>
+            </button>
+        </div>
+
+    </div>
+</dialog>

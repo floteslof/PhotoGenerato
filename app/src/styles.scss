@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@import '_variables.scss';
+
+html, body {
+    background-color: $color_secondary;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+input {
+    border: none;
+}
+
+button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: $color_primary;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    i {
+        font-size: 20px !important;
+        width: 20px;
+        height: 20px;
+        margin-right: 3px;
+    }
+
+    span {
+        font-size: 14px
+    }
+
+    &:hover {
+        background-color: $color_primary_light;
+    }
+}

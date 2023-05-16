@@ -1,0 +1,10 @@
+@import '/src/variables.scss';
+
+#site-header {
+    display: flex;
+    align-items: center;
+    background-color: #243b5d;
+    height: 80px;
+    color: white;
+    padding: 0 20px;
+}
